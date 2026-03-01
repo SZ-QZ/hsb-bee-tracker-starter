@@ -158,27 +158,32 @@ data/2024-10-25_1848.mp4
 The `data/` folder is intentionally ignored by git (so videos won’t be uploaded).
 
 
-How to change the video used in the notebook
+### How to change the video used in the notebook
 
-After you put your .mp4 file in the data/ folder, open: notebooks/beeTracker_backsub.ipynb
+After you put your `.mp4` file in the `data/` folder, open:
 
+```text
+notebooks/beeTracker_backsub.ipynb
+
+Find the video input line near the top of the notebook.
+```
 Example:
-
+```
 in1 = cv.VideoCapture('../data/2024-10-25_1848.mp4')
-
+```
 Replace the old file name with your own file name.
 
 Example:
-
+```
 in1 = cv.VideoCapture('../data/my_video.mp4')
-
+```
 Make sure:
 
-your file is inside the data/ folder
+1. your file is inside the data/ folder
 
-the file name matches exactly
+2. the file name matches exactly
 
-the file ends with .mp4
+3. the file ends with .mp4
 
 ---
 
